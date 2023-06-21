@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    body{
+           background-image:url("https://i.pinimg.com/564x/32/14/10/321410de40c2885a5dac731950d4c351.jpg")
+           }
+
+
+
+
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+		body {
+<!--			background-image: url("https://i.pinimg.com/564x/29/18/ec/2918ec1ade213c79d7293f27fd386f90.jpg");-->
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #99b3ff;
+		}
+
+
+
+         #a {
+            background-image: linear-gradient(to right, #00c6ff 0%, #0072ff  51%, #00c6ff  100%);
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+<!--            color: white;            -->
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
+
+          #a:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+
+
+          body a{
+          text-decoration: none;
+          }
+
+
+
+
+
+    </style>
+</head>
+{% include 'navbar.html' %}
+<body>
+<h1>
+    <center><strong>Contact Us</strong></center>
+</h1>
+
+<p>
+    <b>
+<h6 align="justify">Welcome to the Contact page of Flipkart.
+
+    We are here to help you with any questions you may have.
+
+    If you have any questions about our services or need help with your search, please contact us. We are always happy
+    to answer your questions and provide any assistance you may need.
+
+    We can be reached via the following methods:<br>
+
+    Phone: 1-800-555-1234<br>
+
+    Email: <a href="">info@flipkart.com</a> <br>
+
+    Social Media: Facebook, Twitter, Instagram<br>
+
+    </p>
+
+    <p>If you have any questions or feedback, we'd love to hear from you! Please use the form below to contact us and
+        our team will get back to you shortly.</p></b></h6>
+
+
+<form method="post">{% csrf_token %}
+    <b>
+        <label>Name:</label><br>
+        <input type="text" name="name" placeholder="Name"><br>
+        <label>Email:</label><br>
+        <input type="email" name="email" placeholder="Email"><br>
+        <label>Subject:</label><br>
+        <input type="text" name="subject" placeholder="Subject"><br>
+        <label>Message:</label><br>
+        <textarea name="message" rows="4" cols="50" placeholder="Message"></textarea><br>
+        <input type="submit" class="btn " value="Send" id="a">
+    </b>
+</form>
+
+<!--footer-->
+<div class="row text-center text-white mt-5" style="background-color: #000033 ;">
+    <div class="col-2">
+        <h5>
+            <p>ABOUT</p>
+        </h5>
+        <p>Contact us</p>
+        <p> About us</p>
+        <p>Careers</p>
+        <p>Flipkart Stories</p>
+        <p>Press</p>
+        <p>Flipkart Wholesale</p>
+        <p>Corporate Information</p>
+    </div>
+
+    <div class="col-2">
+        <h5>
+            <p>HELP</p>
+        </h5>
+        <p>Payments</p>
+        <p> Shipping</p>
+        <p>Cancellation & Returns</p>
+        <p>FAQ</p>
+        <p>Report Infringement</p>
+
+    </div>
+    <div class="col-2">
+        <h5>
+            <p>POLICY</p>
+        </h5>
+        <p>Return Policy</p>
+        <p> Terms of Use</p>
+        <p>Security</p>
+        <p>Privacy</p>
+        <p>Press</p>
+        <p>Sitemap</p>
+        <p>EPR Compliance</p>
+    </div>
+    <div class="col-2">
+        <h5>
+            <p>SOCIAL</p>
+        </h5>
+        <p>Facebook</p>
+        <p> Twitter</p>
+        <p>YouTube</p>
+
+    </div>
+    <div class="col-2 border border-secondary">
+        <h5>
+            <p>Mail us:</p>
+        </h5>
+        <p>
+            Flipkart Internet Private Limited,
+            Buildings Alyssa,Begonia &
+            Clove Embassy Tech Village,
+            Outer Ring Road ,Devarabeesanahalli Village,
+            Bengaluru,560103,
+            Karnataka ,India
+        </p>
+    </div>
+    <div class="col-2">
+        <h5>
+            <p>Registered OfficeAddress </p>
+        </h5>
+        <p>
+
+        </p>
+        <p>
+            Flipkart Internet Private Limited,
+            Buildings Alyssa,Begonia &
+            Clove Embassy Tech Village,
+            Outer Ring Road ,Devarabeesanahalli Village,
+            Bengaluru,560103,
+            Karnataka ,India
+            CIN:U51109KA2012PTC066107
+            Telephone:044-45614700
+        </p>
+    </div>
+</div>
+
+
+</body>
+</html>
+
+
